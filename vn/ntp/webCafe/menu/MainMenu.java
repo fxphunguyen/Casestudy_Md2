@@ -1,8 +1,6 @@
 package vn.ntp.webCafe.menu;
 
-import vn.ntp.webCafe.views.OderView;
-import vn.ntp.webCafe.views.ProductView;
-import vn.ntp.webCafe.views.UserView;
+import vn.ntp.webCafe.views.*;
 
 import java.util.Scanner;
 
@@ -16,7 +14,7 @@ public class MainMenu {
         System.out.println("⚪     1. Quản lý người dùng                    ⚪");
         System.out.println("⚪     2. Quản lý sản phẩm                      ⚪");
         System.out.println("⚪     3. Quản lý hóa đơn                       ⚪");
-        System.out.println("⚪      0. Thoát                                ⚪");
+        System.out.println("⚪     0. Thoát                                 ⚪");
         System.out.println("⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪ ⚪");
     }
 
@@ -29,13 +27,13 @@ public class MainMenu {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
                 case 1:
-                    UserView.run();
+                    UserViewLauncher.launch();
                     break;
                 case 2:
-                    ProductView.run();
+                    ProductViewLauncher.run();
                     break;
                 case 3:
-                    OderView.run();
+                    OrderViewLauncher.run();
                     break;
                 case 0:
                     break;

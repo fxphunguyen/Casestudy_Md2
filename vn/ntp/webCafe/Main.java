@@ -1,13 +1,12 @@
 package vn.ntp.webCafe;
 
-import vn.ntp.webCafe.menu.MainMenu;
+import vn.ntp.webCafe.views.MainLauncher;
 
-import java.io.FileNotFoundException;
 
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException {
-        MainMenu.launch();
+    public static void main(String[] args) {
+        MainLauncher.launch();
         System.out.println("㋡ ㋡ ㋡ ㋡ ㋡ ㋡ ㋡ ㋡ ㋡ ㋡ ㋡ ㋡");
         System.out.println("㋡                            ㋡");
         System.out.println("㋡                            ㋡");

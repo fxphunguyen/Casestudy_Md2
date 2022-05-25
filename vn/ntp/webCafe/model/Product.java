@@ -24,7 +24,7 @@ public class Product {
         this.description = description;
     }
 
-    public Product(Long id, String title, Double price, Integer quantity, String description, Instant createdAt, Instant updatedAt) {
+    public Product(long id, String title, Double price, Integer quantity, String description, Instant createdAt, Instant updatedAt) {
         this.id = id;
         this.title = title;
         this.price = price;
@@ -48,11 +48,11 @@ public class Product {
         return new Product(id, title, price, quantity, description, createdAt, updatedAt);
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
